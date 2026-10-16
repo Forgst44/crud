@@ -138,6 +138,17 @@ while (opcao !== 0) {
 
         case 6:
             // Filtrar (filter())
+
+
+
+            let palavra = prompt("Digite uma palavra para filtrar: ")
+            let filtrardas = tarefas.filter(tarefa =>
+                tarefa.toLowerCase().includes(palavra.toLowerCase())
+            );
+
+            alert("Tarefas filtradas: " + filtrardas);
+
+            
             break;
 
         case 7:
